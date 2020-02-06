@@ -1,0 +1,133 @@
+#bg {
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+}
+
+#bg img {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+	min-width:50%;
+    min-height:50%;
+}
+
+#page-wrap {
+	position: relative;
+	z-index: 2;
+	width: 400px;
+	padding: 10px;
+	margin-top: 240px;
+	margin-right: auto;
+	margin-left: auto;
+	left: -10%;
+	right: auto;
+	height: auto;
+}
+
+/* ----
+#sticky {
+	position: absolute;
+	z-index: 3;
+	width: 200px;
+	padding: 10px;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: -125px;
+	right: auto;
+	height: auto;
+}
+---- */
+
+h1 {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+#title  {
+	float: right;
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #000000;
+	opacity: 1.0;
+	position: relative;
+	z-index: 3;
+	margin: 7px 26px 0 0;
+	height: auto;
+	background: #F4BB00;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px 5px 3px 5px;
+}
+
+/* ---- Counter ---- */
+
+#counter {
+	
+	width: 500px;
+	height: 140px;
+	margin: 0 0 0 12px;
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	font-size: 92px;
+	text-shadow: 0 1px 0 #fff;
+	overflow: hidden;
+}
+
+.countDays, .countHours, .countMinutes, .countSeconds {
+	float: left;
+	width: 80px;
+	height: 140px;
+	padding-left: 16px;
+	background: #e7e7e7;
+	opacity: 0.7;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.points {
+	float: left;
+	width: 30px;
+	margin: 0;
+	font-family: Georgia, serif;
+	color: #000000;
+	opacity: 0.6;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 138px;
+	text-shadow: none;
+}
+
+.position {
+	position: relative;
+	float: left;
+	width: 35px;
+	height: 92px;
+	margin: 8px 0 0 0;
+}
+
+.digit {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.boxName {
+	float: left;
+	width: 80px;
+	margin: -5px 0 0 6px;
+	font-size: 36px;
+	color: #000000;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.Hours { margin-left: 5px; }
+.Seconds { margin-left: 2px; }

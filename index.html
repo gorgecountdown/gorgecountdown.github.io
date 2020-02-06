@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+   <head profile="http://www.w3.org/2005/10/profile">
+   
+  
+   
+   <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+   
+<link rel="icon" 
+      type="image/png" 
+      href="http://www.littlehwoodworking.com/graphics/apple-touch-icon.png">
+	
+	<title>PHiSH Gorge Countdown</title>
+	
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link type="text/css" rel="stylesheet" media="all and (max-device-width: 1024px) and (orientation:landscape)"  
+    href="css/iphone.css" />
+    
+    <link type="text/css" rel="stylesheet" media="all and (max-device-width: 768px) and (orientation:portrait)" href="css/iphone-p.css" />
+    
+    <link type="text/css" rel="apple-touch-icon-precomposed" href="../graphics/phish-icon.png" />
+
+<!----------------Google----------------->
+
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27282026-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!----------------Google----------------->
+
+
+ 	<!-- audio -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function() {
+          $(this).jPlayer("setMedia", {
+            mp3: "http://littlehcollective.com/phish-countdown/mp3/46-Days-2012-08-18.mp3"
+          }).jPlayer("play");
+          var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
+          var kickoff = function () {
+            $("#jquery_jplayer_1").jPlayer("play");
+            document.documentElement.removeEventListener(click, kickoff, true);
+          };
+          document.documentElement.addEventListener(click, kickoff, true);
+        },
+        loop: true,
+        swfPath: "js"
+      });
+    });
+    
+    var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
+var kickoff = function () {
+  $("#jquery_jplayer_1").jPlayer("play");
+  document.documentElement.removeEventListener(click, kickoff, true);
+};
+document.documentElement.addEventListener(click, kickoff, true);
+  </script>
+
+
+
+	
+	<!-- jQuery and Modernizr-->
+	
+
+	<!-- Countdown timer and other animations -->
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/script.js"></script>
+
+
+</head>
+<body>
+
+<div id="jquery_jplayer_1"></div>
+
+	<h1>phish at the gorge countdown timer</h1>
+	
+	<div id="bg">
+        <img src="./gorge-2016.jpg" alt="phish gorge timer">
+	</div>
+	
+	<div id="page-wrap">
+		
+		<div id="counter"></div>
+		
+		
+		
+	</div>
+</body>
+</html>
