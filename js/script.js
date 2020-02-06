@@ -5,7 +5,7 @@ $(document).ready(function(){
 	/* ---- Countdown timer ---- */
 
 	$('#counter').countdown({
-timestamp : new Date(2020, 6, 16)
+timestamp : new Date(2020, 6, 17)
 });
 
 	/* ---- Animations ---- */
